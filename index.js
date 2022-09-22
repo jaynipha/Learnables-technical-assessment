@@ -10,7 +10,7 @@ let listOfIntegers = [
     9, 9,
   ];
   
-  const project = (arr, n) => {
+  const nth_most_rare_signature= (arr, n) => {
     const count = {};
     let nth = 0;
   
@@ -29,7 +29,7 @@ let listOfIntegers = [
     let val = Object.values(count).sort(function (a, b) {
       return a - b;
     });
-  
+  1
     for (const key in count) {
       if (count.hasOwnProperty(key)) {
         if (count[key] === val[n - 1]) {
@@ -41,5 +41,5 @@ let listOfIntegers = [
     return nth;
   };
   
-  console.log(project(listOfIntegers, 3));
+  console.log(nth_most_rare_signature(listOfIntegers, 1));
   
